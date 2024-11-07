@@ -4,14 +4,19 @@ import Intro from "./components/Intro";
 import Experience from "./components/Experience";
 import { SkillsSlideIn } from "./components/SkillsSlideIn";
 import { BentoCard } from "./components/bento-card";
+import { NavBar } from "./components/NavBar";
 
 const App: React.FC = () => {
   return (
-    <div>
+    <div className="bg-circut-board">
+      <NavBar />
       <Intro />
       {/* <Skills /> */}
       {/* <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2"> */}
-      <div className="flex justify-center m-3 width-[100vw] md:w-3/6 lg:w-2/6">
+      <div
+        className="flex justify-center m-3 width-[100vw] md:w-3/6 lg:w-2/6"
+        id="skills"
+      >
         <BentoCard
           dark
           eyebrow="Languages, Frameworks, and Tools"
@@ -22,6 +27,7 @@ const App: React.FC = () => {
         />
       </div>
       <Experience />
+      <div className="bg-green-950 h-screen">hello!</div>
       {/* Add more sections like Education and Contact */}
     </div>
   );

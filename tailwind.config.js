@@ -6,3 +6,4 @@ export default {
   },
   plugins: [],
 };
+// bg-[#0d4429]

@@ -12,7 +12,7 @@ const experiences = [
 
 const Experience: React.FC = () => {
   return (
-    <section className="p-8 bg-gray-100">
+    <section className="p-8 bg-gray-100" id="experience">
       <h2 className="text-3xl font-bold">Experience</h2>
       {experiences.map((exp, index) => (
         <div key={index} className="mt-4">
