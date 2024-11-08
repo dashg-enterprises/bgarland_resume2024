@@ -1,3 +1,5 @@
+import React from "react";
+
 const UniversityBento = () => {
   return (
     <div className="flex mt-8 ms-10 items-center gap-5">

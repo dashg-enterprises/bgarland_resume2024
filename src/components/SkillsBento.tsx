@@ -1,8 +1,9 @@
 import { BentoCard } from "./bento-card";
 import ScrumCerts from "./ScrumCerts";
 import { SkillsSlideIn } from "./SkillsSlideIn";
-import Socials from "./socials";
+import Socials from "./Socials";
 import UniversityBento from "./UniversityBento";
+import React from "react";
 
 const SkillsBento = () => {
   return (

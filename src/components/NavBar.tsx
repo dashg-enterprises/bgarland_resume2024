@@ -1,3 +1,4 @@
+import React from "react";
 import { useEffect, useRef, useState } from "react";
 import { Popover, PopoverButton, PopoverPanel } from "@headlessui/react";
 import clsx from "clsx";
@@ -47,7 +48,8 @@ export function NavBar() {
         return;
       }
 
-      let newActiveIndex = null;
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      let newActiveIndex: any = null;
       const elements = sections
         .map(({ id }) => document.getElementById(id))
         .filter((el): el is HTMLElement => el !== null);
