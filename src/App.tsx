@@ -13,10 +13,8 @@ const App: React.FC = () => {
       <Intro />
       {/* <Skills /> */}
       {/* <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2"> */}
-      <div
-        className="flex justify-center m-3 width-[100vw] md:w-3/6 lg:w-2/6"
-        id="skills"
-      >
+      <div className="flex justify-center m-3 width-[100vw] md:w-3/6 lg:w-2/6 relative">
+        <div className="top-[-150px] absolute" id="skills" />
         <BentoCard
           dark
           eyebrow="Languages, Frameworks, and Tools"

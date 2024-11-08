@@ -150,7 +150,7 @@ export function NavBar() {
       </Popover>
       <div className="hidden sm:flex sm:h-32 sm:justify-center sm:border-b sm:border-slate-200 sm:bg-[#222222]/95 sm:[@supports(backdrop-filter:blur(0))]:bg-[#222222]/80 sm:[@supports(backdrop-filter:blur(0))]:backdrop-blur">
         <div className="w-7/12 flex flex-col justify-center ms-4">
-          <h2 className="text-6xl text-white text-fira-code font-bold">
+          <h2 className="text-xl md:text-6xl text-white text-fira-code font-bold">
             Brandy Garland
           </h2>
         </div>

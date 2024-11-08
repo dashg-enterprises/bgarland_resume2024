@@ -12,12 +12,12 @@ const experiences = [
 
 const Experience: React.FC = () => {
   return (
-    <section className="p-8 bg-gray-100" id="experience">
+    <section className="p-8 bg-[#222222] opacity-90 text-white" id="experience">
       <h2 className="text-3xl font-bold">Experience</h2>
       {experiences.map((exp, index) => (
         <div key={index} className="mt-4">
           <h3 className="text-xl font-semibold">{exp.role}</h3>
-          <p className="text-gray-600">
+          <p className="text-gray-300">
             {exp.company} | {exp.period}
           </p>
           <p className="mt-2">{exp.description}</p>
