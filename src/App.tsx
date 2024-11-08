@@ -3,10 +3,11 @@ import Intro from "./components/Intro";
 import Experience from "./components/Experience";
 import { NavBar } from "./components/NavBar";
 import SkillsBento from "./components/SkillsBento";
+import Contact from "./components/Contact";
 
 const App: React.FC = () => {
   return (
-    <div className="bg-circut-board overflow-x-hidden">
+    <div className="bg-circut-board ">
       <NavBar />
       <Intro />
       <div className="flex w-full justify-center relative">
@@ -16,7 +17,8 @@ const App: React.FC = () => {
         </div>
       </div>
       <Experience />
-      <div className="bg-green-950 h-screen">hello!</div>
+      <Contact />
+
       {/* Add more sections like Education and Contact */}
     </div>
   );

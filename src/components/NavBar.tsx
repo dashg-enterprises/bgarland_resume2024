@@ -9,7 +9,7 @@ const sections = [
   },
   { id: "skills", title: "Skills" },
   { id: "experience", title: "Experience" },
-  { id: "blog", title: "Blog" },
+  // { id: "blog", title: "Blog" },
   { id: "contact", title: "Contact" },
 ];
 
