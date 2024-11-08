@@ -1,11 +1,27 @@
-function App() {
+import React from "react";
+import Intro from "./components/Intro";
+import Experience from "./components/Experience";
+import { NavBar } from "./components/NavBar";
+import SkillsBento from "./components/SkillsBento";
+import Contact from "./components/Contact";
+
+const App: React.FC = () => {
   return (
-    <div className="flex items-center justify-center h-screen bg-blue-100">
-      <h1 className="text-4xl font-bold text-blue-600">
-        Welcome to Your React + TypeScript + Vite + Tailwind App!
-      </h1>
+    <div className="bg-circut-board ">
+      <NavBar />
+      <Intro />
+      <div className="flex w-full justify-center relative">
+        <div className="top-[-75px] md:top-[-150px] absolute" id="skills" />
+        <div className="w-full md:w-[90%] lg:w-[1220px] m-8">
+          <SkillsBento />
+        </div>
+      </div>
+      <Experience />
+      <Contact />
+
+      {/* Add more sections like Education and Contact */}
     </div>
   );
-}
+};
 
 export default App;
