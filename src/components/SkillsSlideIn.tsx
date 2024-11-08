@@ -11,7 +11,7 @@ export function SkillsSlideIn() {
   return (
     <>
       <div aria-hidden="true" className="relative h-full">
-        <div className="my-1 px-2 m-2 mt-2">
+        <div className="my-1 px-2 m-5 mt-2">
           {skills.map((row, index) => {
             return (
               <motion.div

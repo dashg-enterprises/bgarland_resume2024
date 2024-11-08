@@ -10,7 +10,7 @@ const App: React.FC = () => {
       <NavBar />
       <Intro />
       <div className="flex w-full justify-center">
-        <div className="w-4/6">
+        <div className="w-full md:w-[90%] lg:w-[1220px] m-8">
           <SkillsBento />
         </div>
       </div>

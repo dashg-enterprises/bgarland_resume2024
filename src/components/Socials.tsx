@@ -24,14 +24,14 @@ const Socials = () => {
     <div>
       {socials.map((social) => (
         <div
-          className="flex m-5 ms-10"
+          className="flex m-3 ms-10"
           onClick={() => {
             // eslint-disable-next-line @typescript-eslint/no-explicit-any
             (window as any).open(social.url, "_blank").focus();
           }}
         >
           <img src={social.logo} className="size-16 bg-white rounded-3xl" />
-          <div className="flex flex-col gap-3 ms-5 text-white justify-center text-wrap">
+          <div className="flex flex-col gap-3 md:m-3 ms-5 text-white justify-center text-wrap">
             <h3 className="text-lg">{social.msg}</h3>
           </div>
         </div>

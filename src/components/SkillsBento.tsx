@@ -6,8 +6,8 @@ import UniversityBento from "./UniversityBento";
 
 const SkillsBento = () => {
   return (
-    <div className="grid h-[650px] grid-cols-3 gap-2 grid-rows-5 mt-10">
-      <div className="col-span-1 row-span-5">
+    <div className="grid min-[1020px]:h-[1000px] lg:h-[700px] lg:grid-cols-3 gap-2 lg:grid-rows-5 mt-0 min-[1020px]:grid-cols-2 min-[1020px]:grid-rows-10">
+      <div className="min-[1020px]:col-span-1 min-[1020px]:row-span-6 lg:col-span-1 lg:row-span-5">
         <BentoCard
           dark
           eyebrow="Scrum Alliance"
@@ -17,7 +17,7 @@ const SkillsBento = () => {
           className="z-10 lg:col-span-2 lg:rounded-tr-4xl"
         />
       </div>
-      <div className="col-span-1 row-span-3">
+      <div className="min-[1020px]:col-span-1 min-[1020px]:row-span-3 lg:col-span-1 lg:row-span-3">
         <BentoCard
           dark
           eyebrow="Links"
@@ -27,7 +27,7 @@ const SkillsBento = () => {
           className="z-10 lg:col-span-2 lg:rounded-tr-4xl"
         />
       </div>
-      <div className="col-span-1 row-span-5">
+      <div className="min-[1020px]:order-4 lg:order-3 min-[1020px]:col-span-2 min-[1020px]:row-span-3 lg:col-span-1 lg:row-span-5">
         <BentoCard
           dark
           eyebrow="Languages, Frameworks, and Tools"
@@ -37,11 +37,11 @@ const SkillsBento = () => {
           className="z-10 lg:col-span-2 lg:rounded-tr-4xl"
         />
       </div>
-      <div className="col-span-1 row-span-1 -mt-10">
+      <div className="min-[1020px]:order-3 lg:order-4 min-[1020px]:col-span-1 min-[1020px]:row-span-3 lg:col-span-1 lg:row-span-2">
         <BentoCard
           dark
           eyebrow="University Honors | Cum Laude"
-          title="Bachelors of Science in Psychology"
+          title="Bachelor's of Science in Psychology"
           description=""
           graphic={<UniversityBento />}
           className="z-10 lg:col-span-2 lg:rounded-tr-4xl"
