@@ -1,28 +1,13 @@
 import React from "react";
-
-const experiences = [
-  {
-    role: "Director of Product",
-    company: "Intellicheck",
-    period: "Aug 2023 - Present",
-    description: `Managing global teams, re-platforming identity verification application, training in Scrum practices.`,
-  },
-  // Add other experiences
-];
+import ExperienceTimeline from "./ExperienceTimeline";
 
 const Experience: React.FC = () => {
   return (
-    <section className="p-8 bg-[#222222] opacity-90 text-white" id="experience">
+    <section className="p-8 bg-[#222222] opacity-90 text-white relative">
+      <div className="top-[-75px] md:top-[-150px] absolute" id="experience" />
+
       <h2 className="text-3xl font-bold">Experience</h2>
-      {experiences.map((exp, index) => (
-        <div key={index} className="mt-4">
-          <h3 className="text-xl font-semibold">{exp.role}</h3>
-          <p className="text-gray-300">
-            {exp.company} | {exp.period}
-          </p>
-          <p className="mt-2">{exp.description}</p>
-        </div>
-      ))}
+      <ExperienceTimeline />
     </section>
   );
 };
