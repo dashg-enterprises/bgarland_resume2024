@@ -9,7 +9,8 @@ const App: React.FC = () => {
     <div className="bg-circut-board">
       <NavBar />
       <Intro />
-      <div className="flex w-full justify-center">
+      <div className="flex w-full justify-center relative">
+        <div className="top-[-150px] absolute" id="skills" />
         <div className="w-full md:w-[90%] lg:w-[1220px] m-8">
           <SkillsBento />
         </div>
@@ -17,8 +18,6 @@ const App: React.FC = () => {
       {/* <Skills /> */}
       {/* <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2"> */}
       <div className="flex justify-center m-3 width-[100vw] md:w-3/6 lg:w-2/6 relative">
-        <div className="top-[-150px] absolute" id="skills" />
-
         {/* <BentoCard
           dark
           eyebrow="Languages, Frameworks, and Tools"
