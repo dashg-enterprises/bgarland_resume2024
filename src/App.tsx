@@ -1,9 +1,6 @@
 import React from "react";
 import Intro from "./components/Intro";
-// import Skills from "./components/Skills";
 import Experience from "./components/Experience";
-import { SkillsSlideIn } from "./components/SkillsSlideIn";
-import { BentoCard } from "./components/bento-card";
 import { NavBar } from "./components/NavBar";
 import SkillsBento from "./components/SkillsBento";
 

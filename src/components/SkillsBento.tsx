@@ -1,6 +1,7 @@
 import { BentoCard } from "./bento-card";
 import ScrumCerts from "./ScrumCerts";
 import { SkillsSlideIn } from "./SkillsSlideIn";
+import UniversityBento from "./UniversityBento";
 
 const SkillsBento = () => {
   return (
@@ -10,7 +11,7 @@ const SkillsBento = () => {
           dark
           eyebrow="Scrum Alliance"
           title="Certifications I've earned"
-          description=" "
+          description="Certified and ready to sprint!"
           graphic={<ScrumCerts />}
           className="z-10 lg:col-span-2 lg:rounded-tr-4xl"
         />
@@ -26,7 +27,16 @@ const SkillsBento = () => {
           className="z-10 lg:col-span-2 lg:rounded-tr-4xl"
         />
       </div>
-      <div className="col-span-2 row-span-2 bg-yellow-500"></div>
+      <div className="col-span-2 row-span-2">
+        <BentoCard
+          dark
+          eyebrow="University Honors | Cum Laude"
+          title="Bachelors of Science in Psychology"
+          description="Math minor"
+          graphic={<UniversityBento />}
+          className="z-10 lg:col-span-2 lg:rounded-tr-4xl"
+        />
+      </div>
     </div>
   );
 };
