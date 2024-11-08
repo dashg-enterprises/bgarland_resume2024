@@ -1,12 +1,13 @@
 import { BentoCard } from "./bento-card";
 import ScrumCerts from "./ScrumCerts";
 import { SkillsSlideIn } from "./SkillsSlideIn";
+import Socials from "./socials";
 import UniversityBento from "./UniversityBento";
 
 const SkillsBento = () => {
   return (
-    <div className="grid h-[650px] grid-cols-5 gap-2 grid-rows-5 mt-10">
-      <div className=" col-span-1 row-span-5">
+    <div className="grid h-[650px] grid-cols-3 gap-2 grid-rows-5 mt-10">
+      <div className="col-span-1 row-span-5">
         <BentoCard
           dark
           eyebrow="Scrum Alliance"
@@ -16,8 +17,17 @@ const SkillsBento = () => {
           className="z-10 lg:col-span-2 lg:rounded-tr-4xl"
         />
       </div>
-      <div className="col-span-2 row-span-3 bg-red-500" />
-      <div className="col-span-2 row-span-5">
+      <div className="col-span-1 row-span-3">
+        <BentoCard
+          dark
+          eyebrow="Links"
+          title=""
+          description=""
+          graphic={<Socials />}
+          className="z-10 lg:col-span-2 lg:rounded-tr-4xl"
+        />
+      </div>
+      <div className="col-span-1 row-span-5">
         <BentoCard
           dark
           eyebrow="Languages, Frameworks, and Tools"
@@ -27,12 +37,12 @@ const SkillsBento = () => {
           className="z-10 lg:col-span-2 lg:rounded-tr-4xl"
         />
       </div>
-      <div className="col-span-2 row-span-2">
+      <div className="col-span-1 row-span-1 -mt-10">
         <BentoCard
           dark
           eyebrow="University Honors | Cum Laude"
           title="Bachelors of Science in Psychology"
-          description="Math minor"
+          description=""
           graphic={<UniversityBento />}
           className="z-10 lg:col-span-2 lg:rounded-tr-4xl"
         />
