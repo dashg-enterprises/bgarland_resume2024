@@ -41,7 +41,7 @@ jobs:
           token: ${{ secrets.CLOUD_DEPLOYMENT_PAT }}
           path: deploy
           sparse-checkout: |
-            terragrunt/${{ inputs.environment }}/aws/spa-website
+            terragrunt/aws/${{ inputs.environment }}/applications/brandy-resume
       - name: Use Node.js
         uses: actions/setup-node@v4
         with:
