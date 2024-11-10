@@ -25,7 +25,7 @@ env:
   APPLICATION_NAME: dashg-template-web
   TF_VERSION: "1.9.3"
   TG_VERSION: "0.63.6"
-  TG_DIR: "deploy/terragrunt/aws/${{ inputs.environment }}/applications/brandy-resume"
+  TG_DIR: "deploy/live/aws/${{ inputs.environment }}/applications/brandy-resume"
 
 jobs:
   deploy:
@@ -41,7 +41,7 @@ jobs:
           token: ${{ secrets.CLOUD_DEPLOYMENT_PAT }}
           path: deploy
           sparse-checkout: |
-            terragrunt/aws/${{ inputs.environment }}/applications/brandy-resume
+            live/aws/${{ inputs.environment }}/applications/brandy-resume
       - name: Use Node.js
         uses: actions/setup-node@v4
         with:
