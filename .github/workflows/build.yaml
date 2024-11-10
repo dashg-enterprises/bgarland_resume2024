@@ -1,7 +1,7 @@
 name: CD Step - Deploy to AWS
 run-name: Deploy to ${{ inputs.environment || 'dev' }} (${{ github.ref_name }})
 
-on: 
+on:
   workflow_dispatch:
     inputs:
       environment:
@@ -14,7 +14,7 @@ on:
           - uat
           - prod
   # pull_request:
-  #   branches: 
+  #   branches:
   #     - main
   #   types: [closed]
 
@@ -23,9 +23,9 @@ concurrency: one-deploy-at-a-time
 env:
   AWS_REGION: us-east-1
   APPLICATION_NAME: dashg-template-web
-  TF_VERSION: '1.9.3'
-  TG_VERSION: '0.63.6'
-  TG_DIR: 'deploy/terragrunt/${{ inputs.environment }}/aws/spa-website'
+  TF_VERSION: "1.9.3"
+  TG_VERSION: "0.63.6"
+  TG_DIR: "deploy/terragrunt/aws/${{ inputs.environment }}/applications/brandy-resume"
 
 jobs:
   deploy:
@@ -45,7 +45,7 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20.x'
+          node-version: "20.x"
       - run: npm ci
       - run: npm run build
       - name: Configure AWS credentials
@@ -66,4 +66,4 @@ jobs:
           TF_VERSION: ${{ env.TF_VERSION }}
           TG_VERSION: ${{ env.TG_VERSION }}
           tg_dir: ${{ env.TG_DIR }}
-          tg_command: 'apply --terragrunt-source ../../../../..//iac'
+          tg_command: "apply --terragrunt-source ../../../../..//iac"
