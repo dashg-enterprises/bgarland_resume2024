@@ -71,6 +71,7 @@ export default function ExperienceTimeline() {
   return (
     <div className="bg-[#222222] opacity-[.98] py-8">
       <div className="mx-auto max-w-7xl overflow-x-auto w-screen">
+        <h2 className="text-3xl font-bold mb-4">Experience</h2>
         <div className="flex w-fit h-fit gap-4">
           {timeline.map((item) => (
             <div key={item.name} className="w-[300px]">
