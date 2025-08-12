@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <section className="p-8 bg-green-950 opacity-90 text-white relative">
+    <section className="p-8 bg-pink-950 opacity-90 text-white relative">
       <div className="top-[-75px] md:top-[-150px] absolute" id="contact" />
 
       <div className="">

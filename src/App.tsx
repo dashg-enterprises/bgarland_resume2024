@@ -7,7 +7,7 @@ import Contact from "./components/Contact";
 
 const App: React.FC = () => {
   return (
-    <div className="bg-circut-board ">
+    <div className="bg-svg ">
       <NavBar />
       <Intro />
       <div className="flex w-full justify-center relative">

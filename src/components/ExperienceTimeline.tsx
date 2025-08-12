@@ -2,12 +2,11 @@ import React from "react";
 
 const timeline = [
   {
-    name: "Founder",
-    company: "dashG",
-    description:
-      "I am building the company from the ground up, leveraging Kubernetes and Terraform for scalable infrastructure, while using React and TypeScript to create robust, responsive applications that align with our vision for growth and innovation.",
+    name: "Senior Staff FullStack Engineer",
+    company: "Method",
+    description: "I design and deliver accessible full-stack features for a legacy CRM, guiding a multi-company team to build scalable, multi-tenant solutions for an e-commerce client. In my capacity as a tech lead, I collaborate with stakeholders to translate ideas into actionable plans, oversee code releases, deployments, and rollbacks, and lead technical discussions that drive improvements in development practices, cloud systems, and agile processes.",
     date: "Present",
-    dateTime: "2024-11",
+    dateTime: "2025-1",
   },
   {
     name: "Director of Product",
@@ -69,41 +68,44 @@ const timeline = [
 
 export default function ExperienceTimeline() {
   return (
-    <div className="bg-[#222222] opacity-[.98] py-8">
-      <div className="mx-auto max-w-7xl overflow-x-auto w-screen">
+    <div className="bg-[#222222] opacity-[.98] p-8 w-screen flex justify-center">
+      <div className="max-w-7xl">
         <h2 className="text-3xl font-bold mb-4">Experience</h2>
-        <div className="flex w-fit h-fit gap-4">
-          {timeline.map((item) => (
-            <div key={item.name} className="w-[300px]">
-              <time
-                dateTime={item.dateTime}
-                className="flex items-center text-sm/6 font-semibold text-green-600"
-              >
-                <svg
-                  viewBox="0 0 4 4"
-                  aria-hidden="true"
-                  className="mr-4 h-1 w-1 flex-none"
+
+        <div className="mx-auto max-w-7xl overflow-x-auto w-screen">
+          <div className="flex w-fit h-fit gap-4">
+            {timeline.map((item) => (
+              <div key={item.name} className="w-[300px]">
+                <time
+                  dateTime={item.dateTime}
+                  className="flex items-center text-sm/6 font-semibold text-pink-600"
                 >
-                  <circle r={2} cx={2} cy={2} fill="currentColor" />
-                </svg>
-                {item.date}
-                <div
-                  aria-hidden="true"
-                  className="hidden md:absolute -ml-6 h-px w-screen -translate-x-full bg-white sm:-ml-4 lg:static lg:-mr-0 lg:ml-8 lg:w-auto lg:flex-auto lg:translate-x-0"
-                />
-              </time>
-              <p className="mt-6 text-lg/8 font-semibold tracking-tight text-white">
-                {item.name}
-              </p>
-              <p className="text-lg/8 tracking-tight font-bold text-green-600">
-                {item.company}
-              </p>
-              <p className="mt-1 text-base/7 text-gray-500">
-                {item.description}
-              </p>
-            </div>
-          ))}
-          <div className="w-[100px]" />
+                  <svg
+                    viewBox="0 0 4 4"
+                    aria-hidden="true"
+                    className="mr-4 h-1 w-1 flex-none"
+                  >
+                    <circle r={2} cx={2} cy={2} fill="currentColor" />
+                  </svg>
+                  {item.date}
+                  <div
+                    aria-hidden="true"
+                    className="hidden md:absolute -ml-6 h-px w-screen -translate-x-full bg-white sm:-ml-4 lg:static lg:-mr-0 lg:ml-8 lg:w-auto lg:flex-auto lg:translate-x-0"
+                  />
+                </time>
+                <p className="mt-6 text-lg/8 font-semibold tracking-tight text-white">
+                  {item.name}
+                </p>
+                <p className="text-lg/8 tracking-tight font-bold text-pink-600">
+                  {item.company}
+                </p>
+                <p className="mt-1 text-base/7 text-gray-500">
+                  {item.description}
+                </p>
+              </div>
+            ))}
+            <div className="w-[100px]" />
+          </div>
         </div>
       </div>
     </div>
