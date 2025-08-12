@@ -4,6 +4,7 @@ import Experience from "./components/Experience";
 import { NavBar } from "./components/NavBar";
 import SkillsBento from "./components/SkillsBento";
 import Contact from "./components/Contact";
+import PersonalProjects from "./components/PersonalProjects";
 
 const App: React.FC = () => {
   return (
@@ -17,6 +18,7 @@ const App: React.FC = () => {
         </div>
       </div>
       <Experience />
+      <PersonalProjects />
       <Contact />
 
       {/* Add more sections like Education and Contact */}

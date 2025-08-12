@@ -4,7 +4,8 @@ const timeline = [
   {
     name: "Senior Staff FullStack Engineer",
     company: "Method",
-    description: "I design and deliver accessible full-stack features for a legacy CRM, guiding a multi-company team to build scalable, multi-tenant solutions for an e-commerce client. In my capacity as a tech lead, I collaborate with stakeholders to translate ideas into actionable plans, oversee code releases, deployments, and rollbacks, and lead technical discussions that drive improvements in development practices, cloud systems, and agile processes.",
+    description:
+      "I design and deliver accessible full-stack features for a legacy CRM, collaborating with a multi-company team to create scalable, multi-tenant solutions for an e-commerce client. I work closely with stakeholders to turn ideas into clear, actionable plans, while overseeing code releases, deployments, and rollbacks. I also lead technical discussions and champion improvements in development practices, cloud systems, and agile processes.",
     date: "Present",
     dateTime: "2025-1",
   },
@@ -69,25 +70,67 @@ const timeline = [
 export default function ExperienceTimeline() {
   return (
     <div className="bg-[#222222] opacity-[.98] p-8 w-screen flex justify-center">
-      <div className="max-w-7xl">
-        <h2 className="text-3xl font-bold mb-4">Experience</h2>
+      <div className="max-w-7xl relative">
+        <h2 className="text-3xl font-bold mb-6">Experience</h2>
+
+        <div className="text-pink-600 absolute left-[-20px] top-[85px]">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="size-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18"
+            />
+          </svg>
+        </div>
+        <div className="text-pink-600 absolute right-[-20px] top-[85px]">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="size-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+            />
+          </svg>
+        </div>
 
         <div className="mx-auto max-w-7xl overflow-x-auto w-screen">
-          <div className="flex w-fit h-fit gap-4">
+          <div className="flex w-fit h-fit gap-4 border-t border-pink-600">
+            <div className="w-[10px]" />
             {timeline.map((item) => (
               <div key={item.name} className="w-[300px]">
                 <time
                   dateTime={item.dateTime}
-                  className="flex items-center text-sm/6 font-semibold text-pink-600"
+                  className="flex flex-col justify-start text-sm/6 font-semibold text-pink-600"
                 >
                   <svg
-                    viewBox="0 0 4 4"
-                    aria-hidden="true"
-                    className="mr-4 h-1 w-1 flex-none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className="size-6"
                   >
-                    <circle r={2} cx={2} cy={2} fill="currentColor" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M8.25 6.75 12 3m0 0 3.75 3.75M12 3v18"
+                    />
                   </svg>
-                  {item.date}
+
+                  <span className="ms-2">{item.date}</span>
                   <div
                     aria-hidden="true"
                     className="hidden md:absolute -ml-6 h-px w-screen -translate-x-full bg-white sm:-ml-4 lg:static lg:-mr-0 lg:ml-8 lg:w-auto lg:flex-auto lg:translate-x-0"
@@ -104,7 +147,7 @@ export default function ExperienceTimeline() {
                 </p>
               </div>
             ))}
-            <div className="w-[100px]" />
+            <div className="w-[10px]" />
           </div>
         </div>
       </div>
