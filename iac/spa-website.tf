@@ -14,13 +14,3 @@ module "spa_on_aws" {
   build_id         = var.build_id
   cert_arn         = var.cert_arn
 }
-
-
-
-module "spa_on_aws" {
-  hosted_zone_id   = local.hosted_zone_id
-  domain           = local.domain
-  subdomain        = var.environment_subdomain
-  build_id         = var.build_id
-  cert_arn         = var.cert_arn
-}
