@@ -2,7 +2,7 @@ import React from "react";
 
 const timeline = [
   {
-    name: "Senior Staff FullStack Engineer",
+    name: "Senior Staff FullStack Engineer | Tech Lead",
     company: "Method",
     description:
       "I design and deliver accessible full-stack features for a legacy CRM, collaborating with a multi-company team to create scalable, multi-tenant solutions for an e-commerce client. I work closely with stakeholders to turn ideas into clear, actionable plans, while overseeing code releases, deployments, and rollbacks. I also lead technical discussions and champion improvements in development practices, cloud systems, and agile processes.",

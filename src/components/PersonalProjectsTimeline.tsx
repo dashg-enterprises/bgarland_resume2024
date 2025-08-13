@@ -22,9 +22,7 @@ export default function PersonalProjectsTimeline() {
   return (
     <div className="bg-[#222222] opacity-[.98] p-8 w-screen flex justify-center">
       <div className="max-w-7xl">
-        <h2 className="text-3xl font-bold mb-4">
-          Independent development projects
-        </h2>
+        <h2 className="text-3xl font-bold mb-4">Independent Projects</h2>
 
         <div className="mx-auto max-w-7xl overflow-x-auto w-screen">
           <div className="flex flex-col w-fit h-fit gap-4 items-center">
